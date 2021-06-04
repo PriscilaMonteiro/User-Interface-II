@@ -1,1 +1,165 @@
-/* Add CSS styling here */
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;	
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    color:#4f4f4f;
+    line-height:1.5;
+    font-family: 'Rubik', sans-serif;
+    background-color:#f8ddde;
+}
+h1{
+	margin:1%;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-size: 7rem;
+	color:#E12454;
+}
+h2{
+	margin-top: 2%;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-size: 4rem;
+	color:#E12454;
+}
+h3{
+    font-family: 'Dancing Script', cursive;
+    text-align:center;
+    font-size:2rem;
+}
+a{
+    text-decoration:none;
+    color:#4f4f4f;
+	border:1px solid #fa9900;
+	margin-right: 2px;
+	padding:1px;
+	border-radius: 10px;
+}
+a:hover {
+	background-color: #fdaaad;
+}
+nav{
+    display:flex;
+    justify-content: center;   
+}
+.link{
+    width:60%;
+    display:flex;
+    justify-content: space-evenly;
+	border-radius: 10px;	
+}
+/*Top Section Styles*/
+#top{
+    margin-bottom: 1%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+p{
+	margin: 3%;
+	text-align: center;
+}
+.flor{
+	margin:0px auto;
+	background-image:url('/foto\ vertical\ colorida3.jpg');
+	width:99%;
+    height:30vh;
+	border-radius: 10px;
+    background-position:center;
+    display:flex;
+    align-items:center;
+	justify-content: center;
+}
+/*Gallery Section Styles*/
+#gallery{
+    display:flex;
+}
+#gallery div{
+    width:40%;
+    height:40vh;
+    margin:4% 1%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    display:flex;
+    align-items:flex-end;
+	justify-content: space-evenly;
+	border-radius: 10px;
+}
+#gallery div .hide{
+    width:70%;
+    height:10vh;
+    background-color:#fff;
+    display:none;
+}
+#gallery div .hide h2{
+    font-size:2.2rem;
+}
+#gallery div:hover .hide{
+    display:block;
+}
+.me{
+    background-image: url('/foto\ about\ me.jpg');
+}
+.entrada{
+    background-image:url('/foto\ vertical\ colorida.jpg');
+}
+.bola{
+    background-image:url('/foto\ vertical\ colorida\ 2.jpg');
+}
+.janela{
+    background-image: url('/foto\ colorida\ principal.jpg');
+}
+.text{
+	padding:5%;
+}
+.contact{
+	text-align: center;
+}
