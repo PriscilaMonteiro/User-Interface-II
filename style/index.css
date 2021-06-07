@@ -167,14 +167,25 @@ p{
 }
 /*Responsive Styles*/
 @media(max-width: 500px){
-    nav{
+    /* nav{
         flex-direction: column;
         justify-content: center;   
-    }
+    } */
     .links{
         width:60%;
         flex-direction: column;
         justify-content: center;	
+        text-align: center;
+    }
+
+       
+    }
+    .flor{
+        width:80%;
+    }
+    .pictures{
+        display:flex;
+        flex-direction:column;
     }
 
 }
