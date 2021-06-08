@@ -159,12 +159,20 @@ p{
     background-image: url('/foto\ colorida\ principal.jpg');
 }
 .text{
-	padding:5%;
+	/* padding:5%; */
     
 }
 .contact{
 	text-align: center;
 }
+.contact p{
+    display:none;
+}
+.projects{
+    display:none;
+}
+
+
 /*Responsive Styles*/
 @media(max-width: 500px){
     /* nav{
@@ -182,15 +190,68 @@ p{
         flex-direction:column
     }
     .introduction{
+        display:flex;
+        flex-direction: column;
         width:100%;
         margin: 10px;
+        padding:10px;
+        text-align: center 
+       
+    }
+    .introduction .flower{
+        order: 0;
+        
+    }
+    .introduction h4{
+        font-family: 'Dancing Script', cursive;
+       
+        font-size: 2rem;
+        color:#E12454;
+        order: 1;
+       
+       
     }
     .introduction h2{
         display: none;
     }
     .introduction p{
-        display: none;
+        display: flex;
+        order: 2;
+    
+       
     }
+  
+    .projects {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    .projects p{
+        display:none;
+    }
+    #gallery{
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+    #gallery div{
+        width:40%;
+        padding:0;
+      
+    }
+    .text{
+        display:none !important;
+    }
+    .contact p{
+        display:flex;
+        justify-content: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem;
+        color:#E12454;
+    }
+  
+   
+
 
 }
     
