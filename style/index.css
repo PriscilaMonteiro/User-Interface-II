@@ -43,7 +43,7 @@ table {
     margin:0;
     padding:0;
     max-width:100%;	
-    /* border:1px solid red; */
+    border:1px solid red;
 }
 /*General Styles*/
 html{
@@ -102,6 +102,9 @@ nav{
     display:flex;
     align-items:center;
     justify-content:center;
+}
+.introduction h4{
+    display:none;
 }
 p{
 	margin: 3%;
@@ -192,35 +195,34 @@ p{
     .introduction{
         display:flex;
         flex-direction: column;
+        justify-content: center;
         width:100%;
         margin: 10px;
         padding:10px;
-        text-align: center 
-       
+        text-align: center;
+        justify-content: center;   
     }
     .introduction .flower{
         order: 0;
-        
     }
     .introduction h4{
+        width: 50%;
+        display:flex;
         font-family: 'Dancing Script', cursive;
-       
+        margin-top: 10px;
+        justify-content: center;
+        margin-left: 25%;
         font-size: 2rem;
         color:#E12454;
-        order: 1;
-       
-       
+        order: 1;       
     }
     .introduction h2{
         display: none;
     }
     .introduction p{
         display: flex;
-        order: 2;
-    
-       
+        order: 2;  
     }
-  
     .projects {
         display: flex;
         flex-direction:column;
